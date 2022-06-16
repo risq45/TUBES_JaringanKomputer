@@ -38,7 +38,7 @@ def run():
 	os.system('mn -c')
 	os.system( 'clear' )
 	topo = MyTopo()
-	net = Mininet(topo=topo, host=CPULimitedHost, link=TCLink)
+	net = Mininet(topo=topo, link=TCLink)
 	net.start()
 
 	h1, h2, r1, r2, r3, r4 = net.get('h1', 'h2', 'r1', 'r2', 'r3', 'r4')
